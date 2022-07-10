@@ -26,7 +26,7 @@
       <h1 class="text-dark text-font-open-sans">All your files in one secure location, accessible anywhere.</h1>
       <p class="text-dark text-font-open-sans">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
     <form class="form-1 max-width" action="">
-      <input class="text-font-raleway" type="text" placeholder="Enter your email..." name="uname" required>
+      <input class="text-font-raleway" type="text" placeholder="Enter your email..." name="uname" required="" oninvalid="this.setCustomValidity('please check your email')">
       <button class="text-font-raleway bg-blue text-white" type="submit">Get Started</button>
       <div class="invalid-feedback">Please check your email</div>
     </form>
@@ -65,7 +65,7 @@
       <p class="text-font-open-sans">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
     </div>
     <form class="form-1 max-width" action="">
-      <input type="text" placeholder="email@example.com" name="uname" required>
+      <input type="text" placeholder="email@example.com" name="uname" required="" oninvalid="this.setCustomValidity('please check your email')">
       <button class="text-white bg-blue text-font-raleway" type="submit">Get Started For Free</button>
       <div class="invalid-feedback">Please check your email</div>
     </form>

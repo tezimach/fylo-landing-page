@@ -59,7 +59,8 @@ a {
 
 .header div {
     display: flex;
-    margin: 24px 0px 0px 0px;
+    margin: 24px 6.4% 0px 0px;
+    min-width: 146px;
 }
 
 .header a {
@@ -72,7 +73,7 @@ a {
 
 .header img {
     margin: 24px 0px 0px 6.4%;
-    width: 20%;
+    width: 60px;
 }
 
 section {
@@ -205,4 +206,45 @@ h3 {
     letter-spacing: 0.3px;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 65px 0px 42px 10.4%;
+}
 
+.logo-container {
+    flex-basis: 100%;
+}
+
+.logo-container div {
+   margin-bottom: 32px;
+}
+
+.navigation-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin-bottom: 32px;
+}
+
+.navigation-container a {
+    margin-bottom: 16px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin-bottom: 32px;
+}
+
+.contact-container a {
+    margin-bottom: 16px;
+}
+
+.fb-container {
+    align-self: center;
+    display: flex;
+    justify-content:space-between;
+    width: 20%;
+}

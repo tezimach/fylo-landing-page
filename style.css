@@ -57,13 +57,14 @@ a {
     margin-bottom: 100px;
 }
 
-.header div {
+.navigation-bar {
     display: flex;
-    margin: 24px 6.4% 0px 0px;
-    min-width: 146px;
+    margin: 24px 0px 0px 0px;
+    min-width: 74%;
+    justify-content: end;
 }
 
-.header a {
+.navigation-bar a {
     display: block;
     font-weight: 400;
     font-size: 12px;
@@ -87,7 +88,7 @@ section {
     margin: 0px 9.33% 24px 9.33%;
 }
 
-.max-width h1 {
+.text-container h1 {
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
@@ -247,4 +248,158 @@ footer {
     display: flex;
     justify-content:space-between;
     width: 20%;
+}
+
+@media only screen and (min-width: 1423px)  {
+    .navigation-bar a {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .header img {
+        margin: 24px 0px 0px 6.4%;
+        width: 150px;
+    }
+
+    section {
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content: left;
+        text-align: left;
+    }
+
+    .text-container {
+        flex-basis: 43%;
+        margin: 0px 6.4% 24px 6.4%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .image-1 {
+        width: 37%;
+        flex-basis: 37%;
+        order: 2;
+        margin: 0px 6.4% 24px 0px;
+    }
+
+    .text-container h1 {
+        margin: 0px 0px 24px 0px;
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    p {
+        margin: 0px 0px 24px 0px;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 24px;
+        letter-spacing: 0.53125px;
+    }
+
+    .form-1 {
+        margin: 0px 0px 0px 0px;
+        flex-direction: row;
+    }
+
+    input {
+        margin-bottom: 16px;
+        background-color: white;
+        width: 320px;
+        margin-right: 16px;
+    }
+
+    button {
+        text-align: center;
+        margin-bottom: 0px;
+        width: 200px;
+    }
+
+    .image-2 {
+        width: 37%;
+        flex-basis: 37%;
+        order: 2;
+        margin: 0px 6.4% 24px 0px;
+    }
+
+    h2 {
+        font-size: 40px;
+        line-height: 47px;
+    }
+
+    .quote-card {
+        margin: 0px 0px 107px 0px;
+        max-width: 53%;
+    }
+
+    .section-3 {
+        justify-content: space-between;
+    }
+
+    .info-container {
+        flex-basis: 39%;
+        margin: 0px 6.4% 85px 6.4%;
+    }
+
+    .info-container h2 {
+        font-size: 32px;
+        line-height: 48px;
+        margin-top: 100px;
+    }
+
+    .section-3 form {
+        flex-direction: column;
+        margin-top: 100px;
+        margin-right: 6.4%
+    }
+
+    footer {
+        flex-direction: row;
+        flex-wrap: unset;
+        justify-content: space-between;
+    }
+
+    .logo-container {
+        margin-top: 90px;
+        flex-basis: unset;
+    }
+
+    .fb-container {
+        width: 7%;
+        margin-right: 16.4%;
+        align-self: flex-start;
+        margin-top: 169px;
+    }
+
+    .navigation-container {
+        margin-top: 170px;
+        flex-basis: unset;
+    }
+
+    .contact-container {
+        margin-top: 170px;
+        flex-basis: unset;
+    }
+
+    button:hover {
+        background-color: hsla(221, 100%, 71%, 1);
+        cursor: pointer;
+    }
+
+    .text-green:hover {
+        color: hsla(170, 63%, 66%, 1);
+    }
+
+    .navigation-container a:hover {
+        color: hsla(221, 100%, 71%, 1);
+    }
+
+    .contact-container a:hover {
+        color: hsla(221, 100%, 71%, 1);
+    }
+
+    .fb-container i:hover {
+        color: hsla(221, 100%, 71%, 1);
+        cursor: pointer;
+    }
 }
